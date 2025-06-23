@@ -1,0 +1,184 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff0f5; /* rosa muy claro */
+  color: #3a3a3a;
+  line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+  background-color: #800000; /* bordo */
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h3 {
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  background-color: #b22222; /* rojo oscuro */
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #ffb6c1; /* rosa claro */
+  color: #800000;
+}
+
+/* Secciones */
+main {
+  padding: 2rem;
+}
+
+/* Títulos */
+h1,
+h2,
+h3 {
+  margin-bottom: 1rem;
+  color: #800000;
+}
+
+/* Imagen destacada */
+main img {
+  margin: 1rem auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Sección Conocenos */
+.Conocenos div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.Conocenos img {
+  border-radius: 5px;
+}
+
+/* Galería */
+.Conocenos img,
+.cabanas .cardHeader img {
+  margin: 5px;
+}
+
+/* Sección Cabañas */
+.cabanas article {
+  border: 2px solid #ffc0cb; /* rosa claro */
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: #e0f7fa; /* celeste pastel */
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 10px rgba(128, 0, 0, 0.2);
+}
+
+.cardHeader {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding-bottom: 1rem;
+}
+
+.cardHeader img {
+  border-radius: 8px;
+}
+
+.main {
+  padding: 1rem 0;
+}
+
+.CardFooter {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.CardFooter a {
+  text-decoration: none;
+  background-color: #800000;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.CardFooter a:hover {
+  background-color: #ffb6c1;
+  color: #800000;
+}
+
+/* Formulario */
+form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 2px solid #ffc0cb;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+form input,
+form textarea {
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  width: 100%;
+}
+
+form button {
+  background-color: #800000;
+  color: white;
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #ffb6c1;
+  color: #800000;
+}
+
+/* Footer */
+footer {
+  background-color: #800000;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+footer div {
+  margin-top: 1rem;
+}
+
+footer td {
+  padding: 5px;
+}
