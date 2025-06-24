@@ -1,23 +1,57 @@
-/* Reset básico */
+/* -------------------
+   RESET Y BASE
+-------------------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fff0f5; /* rosa muy claro */
-  color: #3a3a3a;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fef9fb; /* rosa muy claro */
+  color: #333;
   line-height: 1.6;
 }
 
-/* Encabezado */
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Imagen de fondo o pantalla completa */
+.imagen {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0; /* para que la imagen de fondo no tenga bordes redondeados */
+}
+
+/* -------------------
+   ENCABEZADO
+-------------------- */
 header {
-  background-color: #800000; /* bordo */
+  background-color: #7b1e3e; /* bordo fuerte */
   color: white;
-  padding: 1rem;
+  padding: 1.5rem 2rem;
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 header h3 {
@@ -25,160 +59,252 @@ header h3 {
 }
 
 nav {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #d48fa3; /* rosa suave */
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: #c4e3f5; /* celeste pastel */
+  color: #7b1e3e;
+}
+
+/* -------------------
+   SECCIONES
+-------------------- */
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+h1,
+h2,
+h3 {
+  color: #7b1e3e;
+  margin-bottom: 1rem;
+}
+
+/* -------------------
+   CONOCENOS
+-------------------- */
+.Conocenos div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 1rem 0;
+}
+
+/* -------------------
+   CABAÑAS
+-------------------- */
+.cabanas article {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cardHeader {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+.main p {
+  margin-bottom: 1rem;
+}
+
+.main div {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+  align-items: center;
+}
+
+.CardFooter {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.CardFooter a {
+  text-decoration: none;
+  background-color: #7b1e3e;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.CardFooter a:hover {
+  background-color: #d48fa3;
+  color: #7b1e3e;
+}
+
+/* -------------------
+   FORMULARIO
+-------------------- */
+form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #7b1e3e;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #d48fa3;
+  color: #7b1e3e;
+}
+
+/* -------------------
+   FOOTER
+-------------------- */
+footer {
+  background-color: #7b1e3e;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer div {
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
 }
 
-nav a {
-  color: white;
+footer td {
+  padding: 0.5rem;
+}
+
+/* -------------------
+   PORTADA HERO
+-------------------- */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+  padding: 1rem;
+}
+
+.hero-title {
+  font-family: "Brush Script MT", cursive;
+  font-size: 5rem;
+  color: #b22234; /* rojo bordo */
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-family: "Brush Script MT", cursive;
+  font-size: 2rem;
+  color: #111;
+  margin-bottom: 2rem;
+}
+
+/* Botones portada */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
   text-decoration: none;
   font-weight: bold;
-  padding: 0.4rem 0.8rem;
-  border-radius: 8px;
-  background-color: #b22222; /* rojo oscuro */
-  transition: background-color 0.3s;
+  transition: all 0.3s ease;
 }
 
-nav a:hover {
-  background-color: #ffb6c1; /* rosa claro */
-  color: #800000;
-}
-
-/* Secciones */
-main {
-  padding: 2rem;
-}
-
-/* Títulos */
-h1,
-h2,
-h3 {
-  margin-bottom: 1rem;
-  color: #800000;
-}
-
-/* Imagen destacada */
-main img {
-  margin: 1rem auto;
-  display: block;
-  border-radius: 10px;
-}
-
-/* Sección Conocenos */
-.Conocenos div {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 1rem;
-}
-
-.Conocenos img {
-  border-radius: 5px;
-}
-
-/* Galería */
-.Conocenos img,
-.cabanas .cardHeader img {
-  margin: 5px;
-}
-
-/* Sección Cabañas */
-.cabanas article {
-  border: 2px solid #ffc0cb; /* rosa claro */
-  padding: 1rem;
-  border-radius: 15px;
-  background-color: #e0f7fa; /* celeste pastel */
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 10px rgba(128, 0, 0, 0.2);
-}
-
-.cardHeader {
-  display: flex;
-  overflow-x: auto;
-  gap: 10px;
-  padding-bottom: 1rem;
-}
-
-.cardHeader img {
-  border-radius: 8px;
-}
-
-.main {
-  padding: 1rem 0;
-}
-
-.CardFooter {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 1rem;
-}
-
-.CardFooter a {
-  text-decoration: none;
-  background-color: #800000;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-  transition: background-color 0.3s;
-}
-
-.CardFooter a:hover {
-  background-color: #ffb6c1;
-  color: #800000;
-}
-
-/* Formulario */
-form {
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 10px;
-  border: 2px solid #ffc0cb;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-form input,
-form textarea {
-  padding: 0.7rem;
-  border-radius: 5px;
-  border: 1px solid #aaa;
-  width: 100%;
-}
-
-form button {
-  background-color: #800000;
-  color: white;
+.btn-rosa {
+  background-color: #ff7f7f;
+  color: black;
   border: none;
-  padding: 0.7rem 1rem;
-  border-radius: 5px;
-  cursor: pointer;
 }
 
-form button:hover {
-  background-color: #ffb6c1;
-  color: #800000;
+.btn-rosa:hover {
+  background-color: #ffa8a8;
 }
 
-/* Footer */
-footer {
-  background-color: #800000;
-  color: white;
-  padding: 2rem;
-  text-align: center;
+.btn-outline {
+  border: 2px solid black;
+  color: black;
+  background-color: transparent;
 }
 
-footer img {
-  vertical-align: middle;
-  margin-right: 10px;
-}
-
-footer div {
-  margin-top: 1rem;
-}
-
-footer td {
-  padding: 5px;
+.btn-outline:hover {
+  background-color: rgba(0, 0, 0, 0.05);
 }
