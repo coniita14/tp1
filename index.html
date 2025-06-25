@@ -300,71 +300,80 @@
         <h2>Consulta sobre disponibilidad</h2>
 
         <form>
-          <div>
-            <label>Fecha de ingreso</label>
-            <input type="text" placeholder="DD-MM-AA" />
+  <div>
+    <label>Fecha de ingreso</label>
+    <input type="text" placeholder="DD-MM-AA" />
+  </div>
 
-            <label>Fecha de salida</label>
-            <input type="text" placeholder="DD-MM-AA" />
+  <div>
+    <label>Fecha de salida</label>
+    <input type="text" placeholder="DD-MM-AA" />
+  </div>
 
-            <label>Adultos</label>
-            <input type="number" value="2" />
+  <div>
+    <label>Adultos</label>
+    <input type="number" value="2" />
+  </div>
 
-            <label>Menores</label>
-            <input type="number" value="1" />
-          </div>
-          <p>
-            <div>
-              <label>Nombre Completo</label>
-              <input type="text" placeholder="Ingrese su nombre" />
+  <div>
+    <label>Menores</label>
+    <input type="number" value="1" />
+  </div>
 
-              <label>Telefono</label>
-              <input type="text" placeholder="Ingrese su telefono" />
+  <div>
+    <label>Nombre Completo</label>
+    <input type="text" placeholder="Ingrese su nombre" />
+  </div>
 
-              <label>Email</label>
-              <input type="text" placeholder="Ingrese su email" />
-            </div>
-          </p>
-          <label>Mensaje</label>
-          <textarea
-            placeholder="Ingrese su consulta"
-            rows="4"
-            cols="50"
-          ></textarea>
-          <button type="submit">Consultar</button>
-        </form>
-      </section>
-      <footer>
-        <p>
-          <img src="/public/sql.png" alt="base de datos "  width="100" height="100">
-          <p>CABAÑAS SQL</p>
-          <h2>Contacto</h2>
-          <div>
-            <tr>
-              <td><img src="public/correo.png" alt="Email"></td>
-              <td>Cabañas@sma.com.ar</td>
-            </tr>
-          </div>
-          <div>
-            <tr>
-              <td><img src="public/telefono.png" alt="Teléfono"></td>
-              <td>2944 -202020</td>
-            </tr>
-          </div>
-          <div>
-            <tr>
-              <td><img src="public/whatsapp.png" alt="WhatsApp"></td>
-              <td>2944 -202020</td>
-            </tr>
-          </div>
-          <div>
-            <tr>
-              <td><img src="public/ubicacion.png" alt="Ubicación"></td>
-              <td>Coronel Diaz 1156</td>
-            </tr>
-          </div>
-      </p>
-      </footer>
+  <div>
+    <label>Telefono</label>
+    <input type="text" placeholder="Ingrese su telefono" />
+  </div>
+
+  <div>
+    <label>Email</label>
+    <input type="email" placeholder="Ingrese su email" />
+  </div>
+
+  <div style="grid-column: span 3;">
+    <label>Mensaje</label>
+    <textarea placeholder="Ingrese su consulta" rows="4"></textarea>
+  </div>
+
+  <button type="submit">Consultar</button>
+</form>
+
+ <footer>
+  <div class="footer-content">
+    <img src="./public/sql.png" alt="logo SQL" width="100" height="100">
+    <p>CABAÑAS SQL</p>
+    
+    <div class="contact-item">
+      <a href="mailto:cabañas@sma.com.ar" target="_blank">
+        <img src="public/correo.png" alt="Email">
+        Cabañas@sma.com.ar
+      </a>
+    </div>
+
+    <div class="contact-item">
+      <img src="public/telefono.png" alt="Teléfono">
+      2944 -202020
+    </div>
+
+    <div class="contact-item">
+      <a href="https://wa.me/5492944202020" target="_blank">
+        <img src="public/whatsapp.png" alt="WhatsApp">
+        2944 -202020
+      </a>
+    </div>
+
+    <div class="contact-item">
+      <img src="public/ubicacion.png" alt="Ubicación">
+      Coronel Diaz 1156
+    </div>
+  </div>
+</footer>
+
     </main>
   </body>
 </html>

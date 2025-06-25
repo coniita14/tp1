@@ -322,3 +322,79 @@ footer td {
 .distancias li {
   margin-bottom: 0.5rem;
 }
+
+.consultas form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fef9fb;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.consultas form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.consultas form input,
+.consultas form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.consultas form textarea {
+  grid-column: span 3;
+  resize: none;
+}
+
+.consultas form button {
+  grid-column: span 3;
+  padding: 0.8rem 1.5rem;
+  background-color: #801336; /* Bordó */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  width: fit-content;
+  justify-self: end;
+}
+
+.footer-content {
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+.contact-item {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.contact-item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #a03030;
+  padding: 0.3rem;
+}
+
+.contact-item a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
